@@ -1,0 +1,15 @@
+{
+  "name": "calculadora-de-imc",
+  "version": "1.0.0",
+  "description": "Calculadora de IMC",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve ."
+  },
+  "author": "Ana Flores e Beatriz Antunes",
+  "license": "ISC",
+  "dependencias": {
+    "serve": "^13.0.4"
+  }
+}

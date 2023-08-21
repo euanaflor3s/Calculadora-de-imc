@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+
+    <meta charset="utf-8" />
+    <title>Calculadora de IMC</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <meta name="description" content="PWA de uma Calculadora de IMC">
+    <link rel="apple-touch-icon" href="images/icon-216px.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!--viewport para designers responsivos (mobo), content é a configuração-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+
+  </head>
+
+  <body class="fullscreen">
+    <div class="container">
+
+      <h1>CALCULADORA DE IMC</h1>
+      
+      <div class="unico">
+        <label for="nome">NOME:</label>
+        <input 
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+          
+        />
+
+        <div class="formulario">
+
+          <div class="form">
+            <label for="idade">IDADE:</label>
+            <input
+              type="text"
+              id="idade"
+              name="idade"
+              placeholder="Digite sua idade"
+              
+            />
+          </div>
+
+          <div class="form">
+            <label for="sexo">SEXO:</label>
+            <select id="sexo" name="sexo">
+              <option value="FEMININO">Feminino</option>
+              <option value="MASCULINO">Masculino</option>
+            </select>
+          </div>
+
+          <div class="form">
+            <label for="altura">ALTURA:</label>
+            <input
+              type="number"
+              id="altura"
+              name="altura"
+              placeholder="Digite sua altura"
+              
+            />
+          </div>
+
+          <div class="form">
+            <label for="peso">PESO:</label>
+            <input
+              type="number"
+              id="peso"
+              name="peso"
+              placeholder="Digite seu peso"
+              
+            />
+          </div>
+        </div>
+
+        <button id="bntcal" type="button" onclick="calcular()">
+          Calcular IMC
+        </button>
+
+        <button id="bntlim" type="button" onclick="limpar()">
+          Limpar 
+        </button>
+
+      </div>
+
+
+      <div class="final">
+
+        <div class="one" id="one">
+          <div class="nomeIdade">
+            <h1 id="nome_final"></h1>
+            <h1 id="idade_final"></h1>
+          </div>
+
+          <h1 id="sexo_final"></h1>
+
+          <div class="pesoAltura">
+            <h1 id="altura_final"></h1>
+            <h1 id="peso_final"></h1>
+          </div>
+        </div>
+
+        Confira seus resultados:
+        <h1 id="resultado">0</h1>
+        <h1 id="tela"></h1>
+      </div>
+
+
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
